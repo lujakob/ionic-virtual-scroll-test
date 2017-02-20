@@ -1,0 +1,15 @@
+page-page2 {
+    ion-list {
+        height:100%;
+    }
+    virtual-scroll {
+        overflow: hidden;
+        overflow-y: auto;
+        border: 1px solid #d1dadf;
+        height: 100%;
+        display: block;
+    }
+    .item {
+        padding:5px;
+    }
+}
