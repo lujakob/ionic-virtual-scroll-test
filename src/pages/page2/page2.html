@@ -3,18 +3,14 @@
 		<button ion-button menuToggle>
 			<ion-icon name="menu"></ion-icon>
 		</button>
-		<ion-title>Total: {{items.length}}</ion-title>
+		<ion-title>Total: {{total}}</ion-title>
 	</ion-navbar>
 </ion-header>
 
 <ion-content>
 	<virtual-scroll [items]="items" (update)="viewPortItems = $event" (change)="onListChange($event)">
 		<div class="item" *ngFor="let item of viewPortItems">
-			<ion-icon [name]="item.icon" item-left></ion-icon>
-			{{item.title}}
-			<div class="item-note" item-right>
-				{{item.note}}
-			</div>
+			{{item.clientName}}
 		</div>
 	</virtual-scroll>
 	<div *ngIf="selectedItem" padding>

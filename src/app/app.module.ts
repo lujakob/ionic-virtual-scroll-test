@@ -1,4 +1,5 @@
 import {NgModule, ErrorHandler} from '@angular/core';
+import { HttpModule } from '@angular/http';
 import {IonicApp, IonicModule, IonicErrorHandler} from 'ionic-angular';
 import {MyApp} from './app.component';
 import {Page1} from '../pages/page1/page1';
@@ -14,6 +15,7 @@ import {ListItemComponent} from '../components/list-item';
         ListItemComponent
     ],
     imports: [
+        HttpModule,
         VirtualScrollModule,
         IonicModule.forRoot(MyApp)
     ],
